@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Species · Chhaya Toru</title>
+  <meta name="description" content="Tree species planted in Bangladesh: planted, surviving, survival rate and CO₂ absorption per species.">
+  <link rel="icon" href="../../assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/animations.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-head fade-up">
+      <div class="brand">
+        <img src="../../assets/logo.png" class="brand-logo sway" alt="Chhaya Toru logo">
+        <div>
+          <h1 class="brand-name">Chhaya Toru</h1>
+          <p class="motto">Every tree we plant gives shade to tomorrow.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../index.html" class="nav-link">Overview</a>
+      <a href="../divisions/divisions.html" class="nav-link">Divisions</a>
+      <a href="species.html" class="nav-link on">Species</a>
+      <a href="../reports/reports.html" class="nav-link">Reports</a>
+      <a href="../../admin/admin.html" class="nav-link nav-admin">⚙ Admin</a>
+    </nav>
+
+    <main>
+      <div class="grid charts">
+        <section class="card">
+          <h2 class="card-title">Survival rate by species</h2>
+          <div class="chart-box tall"><canvas id="chart-survival" aria-label="Survival rate by species"></canvas></div>
+        </section>
+        <section class="card">
+          <h2 class="card-title">Share of surviving trees</h2>
+          <div class="chart-box tall"><canvas id="chart-share" aria-label="Share of surviving trees by species"></canvas></div>
+        </section>
+      </div>
+
+      <section class="card wide">
+        <div class="table-head">
+          <h2 class="card-title">All species</h2>
+          <input type="search" id="search" placeholder="Search species…" aria-label="Search species">
+        </div>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Species</th>
+                <th>Type</th>
+                <th class="num">Planted</th>
+                <th class="num">Surviving</th>
+                <th class="num">Survival</th>
+                <th class="num">CO₂ (t/yr)</th>
+              </tr>
+            </thead>
+            <tbody id="species-rows"></tbody>
+          </table>
+        </div>
+        <p class="note">CO₂ uses each species' own absorption rate (kg per surviving tree per year).</p>
+      </section>
+    </main>
+
+    <footer class="site-foot">Chhaya Toru · Every tree counts</footer>
+  </div>
+
+  <script type="module" src="species.js"></script>
+</body>
+</html>

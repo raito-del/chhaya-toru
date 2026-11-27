@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chhaya Toru · Overview</title>
+  <meta name="description" content="Bangladesh tree plantation tracker: trees planted, survival rates and CO₂ absorption by division and district.">
+  <link rel="icon" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-head fade-up">
+      <div class="brand">
+        <img src="assets/logo.png" class="brand-logo sway" alt="Chhaya Toru logo">
+        <div>
+          <h1 class="brand-name">Chhaya Toru</h1>
+          <p class="motto">Every tree we plant gives shade to tomorrow.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="nav-link on">Overview</a>
+      <a href="sections/divisions/divisions.html" class="nav-link">Divisions</a>
+      <a href="sections/species/species.html" class="nav-link">Species</a>
+      <a href="sections/reports/reports.html" class="nav-link">Reports</a>
+      <a href="admin/admin.html" class="nav-link nav-admin">⚙ Admin</a>
+    </nav>
+
+    <main>
+      <!-- Headline numbers -->
+      <div class="grid stats">
+        <article class="card stat">
+          <p class="k">Total planted</p>
+          <p class="v" id="stat-planted">—</p>
+        </article>
+        <article class="card stat">
+          <p class="k">Surviving trees</p>
+          <p class="v" id="stat-alive">—</p>
+        </article>
+        <article class="card stat">
+          <p class="k">Annual CO₂ absorbed</p>
+          <p class="v" id="stat-co2">—<span class="unit"> t</span></p>
+          <p class="note" id="stat-cars"></p>
+        </article>
+        <article class="card gauge-card">
+          <svg viewBox="0 0 130 130" class="gauge" role="img" aria-label="Survival rate gauge">
+            <defs>
+              <linearGradient id="gauge-grad" x1="0" x2="1">
+                <stop offset="0" stop-color="#7ee04a"/>
+                <stop offset="1" stop-color="#1a9e3a"/>
+              </linearGradient>
+            </defs>
+            <circle cx="65" cy="65" r="54" class="gauge-track"/>
+            <circle cx="65" cy="65" r="54" class="gauge-fill" id="gauge-fill"/>
+            <text x="65" y="72" text-anchor="middle" class="gauge-text" id="gauge-text">0%</text>
+          </svg>
+          <div>
+            <p class="k">Survival rate</p>
+            <p class="note" id="gauge-note"></p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Charts -->
+      <div class="grid charts">
+        <section class="card">
+          <h2 class="card-title">Growth trend</h2>
+          <div class="chart-box"><canvas id="chart-trend" aria-label="Planted and surviving trees over time"></canvas></div>
+        </section>
+        <section class="card">
+          <h2 class="card-title">Species mix</h2>
+          <div class="chart-box"><canvas id="chart-species" aria-label="Share of surviving trees by species"></canvas></div>
+        </section>
+      </div>
+
+      <section class="card wide">
+        <h2 class="card-title">Planted vs surviving by division</h2>
+        <div class="chart-box tall"><canvas id="chart-division" aria-label="Planted and surviving trees by division"></canvas></div>
+      </section>
+
+      <section class="card wide">
+        <h2 class="card-title">Survival rate by division</h2>
+        <div id="division-bars" class="bars"></div>
+      </section>
+
+      <p class="note center">
+        Survival rate = surviving trees ÷ planted trees. CO₂ = surviving trees × absorption per tree (kg) ÷ 1000.
+        Equivalence uses about 4.6 t CO₂ per car per year.
+      </p>
+    </main>
+
+    <footer class="site-foot">Chhaya Toru · Every tree counts</footer>
+  </div>
+
+  <!-- Data and chart logic: js/charts.js (next step) -->
+  <script type="module" src="js/charts.js"></script>
+</body>
+</html>

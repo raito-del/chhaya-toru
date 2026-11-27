@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Reports · Chhaya Toru</title>
+  <meta name="description" content="Area-wise plantation report: planted, surviving, survival rate and CO₂ absorption for every division and district.">
+  <link rel="icon" href="../../assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/animations.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-head fade-up">
+      <div class="brand">
+        <img src="../../assets/logo.png" class="brand-logo sway" alt="Chhaya Toru logo">
+        <div>
+          <h1 class="brand-name">Chhaya Toru</h1>
+          <p class="motto">Every tree we plant gives shade to tomorrow.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../index.html" class="nav-link">Overview</a>
+      <a href="../divisions/divisions.html" class="nav-link">Divisions</a>
+      <a href="../species/species.html" class="nav-link">Species</a>
+      <a href="reports.html" class="nav-link on">Reports</a>
+      <a href="../../admin/admin.html" class="nav-link nav-admin">⚙ Admin</a>
+    </nav>
+
+    <main>
+      <section class="card wide">
+        <div class="table-head">
+          <div>
+            <h2 class="card-title">Area-wise Plantation Report</h2>
+            <p class="note" id="report-meta">Loading…</p>
+          </div>
+          <div class="toolbar-inline">
+            <select id="division-filter" aria-label="Filter by division">
+              <option value="">All divisions</option>
+            </select>
+            <input type="search" id="search" placeholder="Search district…" aria-label="Search district">
+          </div>
+        </div>
+
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Division</th>
+                <th>District</th>
+                <th class="num">Planted</th>
+                <th class="num">Surviving</th>
+                <th class="num">Survival</th>
+                <th class="num">CO₂ (t/yr)</th>
+              </tr>
+            </thead>
+            <tbody id="report-rows"></tbody>
+            <tfoot id="report-foot"></tfoot>
+          </table>
+        </div>
+
+        <p class="note">Survival = surviving ÷ planted. CO₂ = surviving × absorption per tree (kg) ÷ 1000. Sample figures until field records are added.</p>
+      </section>
+    </main>
+
+    <footer class="site-foot">Chhaya Toru · Every tree counts</footer>
+  </div>
+
+  <script type="module" src="reports.js"></script>
+</body>
+</html>

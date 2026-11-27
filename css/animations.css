@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Chhaya Toru · Animations
+   Every keyframe and motion utility lives in this file.
+   Layout and colours live in style.css.
+   ========================================================================== */
+
+/* ---------- Entrance ---------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.fade-up {
+  animation: fadeUp .6s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+/* ---------- Floating and swaying ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50%      { transform: rotate(1.5deg); }
+}
+
+.sway {
+  transform-origin: 50% 90%;
+  animation: sway 5s ease-in-out infinite;
+}
+
+/* ---------- Glow pulse ---------- */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 0 0 #2fbf4a55; }
+  50%      { box-shadow: 0 0 0 14px #2fbf4a00; }
+}
+
+.glow {
+  animation: glow 2.4s ease-in-out infinite;
+}
+
+/* ---------- Drawing SVG strokes (logo intro) ---------- */
+.draw path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw 2.2s ease forwards;
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* ---------- Leaf pop-in ---------- */
+@keyframes pop {
+  0%   { transform: scale(0); opacity: 0; }
+  70%  { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pop {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pop .5s cubic-bezier(.34, 1.56, .64, 1) both;
+}
+
+/* ---------- Loading shimmer ---------- */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, #7ee04a33, transparent) #0a140c;
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* ---------- Hover interactions ---------- */
+.card {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 34px #7ee04a33, 0 0 0 1px #2fbf4a88;
+}
+
+/* ---------- Reduced motion ----------
+   People who turn off motion in their system settings see the final state instantly. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

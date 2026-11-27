@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Admin · Chhaya Toru</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <main class="login-wrap">
+
+    <!-- Sign-in view: shown when no admin is signed in -->
+    <section id="login-view" class="login-card fade-up">
+      <img src="../assets/logo.png" class="login-logo sway" alt="Chhaya Toru logo">
+      <h2>Admin sign in</h2>
+      <p class="muted">Sign in with your approved Google account to manage Chhaya Toru.</p>
+      <button id="googleBtn" class="google-btn" type="button">
+        <span class="g-badge">G</span> Continue with Google
+      </button>
+      <p id="err" class="error" role="alert"></p>
+    </section>
+
+    <!-- Admin view: shown only after the admin check passes -->
+    <section id="admin-view" class="admin-panel fade-up" hidden>
+      <header class="admin-head">
+        <div>
+          <h2>Chhaya Toru · Admin</h2>
+          <p class="muted" id="who"></p>
+        </div>
+        <button id="logoutBtn" class="ghost-btn" type="button">Log out</button>
+      </header>
+
+      <nav class="admin-tabs" aria-label="Admin sections">
+        <button class="tab on" data-tab="districts" type="button">Districts</button>
+        <button class="tab" data-tab="species" type="button">Species</button>
+      </nav>
+
+      <!-- Districts -->
+      <section id="tab-districts" class="card wide">
+        <div class="table-head">
+          <h2 class="card-title">Districts</h2>
+          <div class="toolbar-inline">
+            <input type="search" id="d-search" placeholder="Search district…" aria-label="Search districts">
+          </div>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Division</th>
+                <th>District</th>
+                <th class="num">Planted</th>
+                <th class="num">Surviving</th>
+                <th class="num">kg CO₂/tree</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="districts-body"></tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-title">Add a district</h3>
+        <form class="add-form" id="district-form" autocomplete="off">
+          <input name="division_en" placeholder="Division (e.g. Dhaka)" required>
+          <input name="name_en" placeholder="District (e.g. Gazipur)" required>
+          <input name="planted" type="number" min="0" placeholder="Planted" required>
+          <input name="surviving" type="number" min="0" placeholder="Surviving" required>
+          <input name="co2PerTree" type="number" min="0" step="0.1" placeholder="kg CO₂ / tree / yr" required>
+          <button class="btn pri" type="submit">Add district</button>
+        </form>
+      </section>
+
+      <!-- Species -->
+      <section id="tab-species" class="card wide" hidden>
+        <div class="table-head">
+          <h2 class="card-title">Species</h2>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Species</th>
+                <th>Type</th>
+                <th class="num">Planted</th>
+                <th class="num">Surviving</th>
+                <th class="num">kg CO₂/tree</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="species-body"></tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-title">Add a species</h3>
+        <form class="add-form" id="species-form" autocomplete="off">
+          <input name="name" placeholder="Species name" required>
+          <input name="type" placeholder="Type (e.g. Timber)">
+          <input name="planted" type="number" min="0" placeholder="Planted" required>
+          <input name="surviving" type="number" min="0" placeholder="Surviving" required>
+          <input name="co2PerTree" type="number" min="0" step="0.1" placeholder="kg CO₂ / tree / yr" required>
+          <button class="btn pri" type="submit">Add species</button>
+        </form>
+      </section>
+
+      <p id="status" class="status" role="status"></p>
+    </section>
+
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Divisions · Chhaya Toru</title>
+  <meta name="description" content="Tree plantation by division and district: planted, surviving, survival rate and CO₂ absorption.">
+  <link rel="icon" href="../../assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/animations.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-head fade-up">
+      <div class="brand">
+        <img src="../../assets/logo.png" class="brand-logo sway" alt="Chhaya Toru logo">
+        <div>
+          <h1 class="brand-name">Chhaya Toru</h1>
+          <p class="motto">Every tree we plant gives shade to tomorrow.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="../../index.html" class="nav-link">Overview</a>
+      <a href="divisions.html" class="nav-link on">Divisions</a>
+      <a href="../species/species.html" class="nav-link">Species</a>
+      <a href="../reports/reports.html" class="nav-link">Reports</a>
+      <a href="../../admin/admin.html" class="nav-link nav-admin">⚙ Admin</a>
+    </nav>
+
+    <main>
+      <div class="toolbar">
+        <label class="field">
+          <span class="k">Division</span>
+          <select id="division-select" aria-label="Choose a division"></select>
+        </label>
+      </div>
+
+      <div class="grid stats">
+        <article class="card stat">
+          <p class="k">Planted</p>
+          <p class="v" id="d-planted">—</p>
+        </article>
+        <article class="card stat">
+          <p class="k">Surviving</p>
+          <p class="v" id="d-surviving">—</p>
+        </article>
+        <article class="card stat">
+          <p class="k">Survival rate</p>
+          <p class="v" id="d-rate">—</p>
+        </article>
+        <article class="card stat">
+          <p class="k">CO₂ absorbed / year</p>
+          <p class="v" id="d-co2">—<span class="unit"> t</span></p>
+        </article>
+      </div>
+
+      <section class="card wide">
+        <h2 class="card-title" id="chart-title">Survival rate by district</h2>
+        <div class="chart-box tall"><canvas id="chart-districts" aria-label="Survival rate by district"></canvas></div>
+      </section>
+
+      <section class="card wide">
+        <div class="table-head">
+          <h2 class="card-title">Districts</h2>
+          <input type="search" id="search" placeholder="Search district…" aria-label="Search district">
+        </div>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>District</th>
+                <th class="num">Planted</th>
+                <th class="num">Surviving</th>
+                <th class="num">Survival</th>
+                <th class="num">CO₂ (t/yr)</th>
+              </tr>
+            </thead>
+            <tbody id="district-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-foot">Chhaya Toru · Every tree counts</footer>
+  </div>
+
+  <script type="module" src="divisions.js"></script>
+</body>
+</html>
