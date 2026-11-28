@@ -7,6 +7,7 @@ import {
   getAuth,
   GoogleAuthProvider,
   signInWithPopup,
+  signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
@@ -27,6 +28,12 @@ provider.setCustomParameters({ prompt: "select_account" });
 // Opens the Google account picker and returns the signed-in user
 export async function loginWithGoogle() {
   const result = await signInWithPopup(auth, provider);
+  return result.user;
+}
+
+// Email and password sign-in (the admin's own username and password)
+export async function loginWithPassword(email, password) {
+  const result = await signInWithEmailAndPassword(auth, email, password);
   return result.user;
 }
 
