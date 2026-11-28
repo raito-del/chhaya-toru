@@ -11,6 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/animations.css">
+  <style>
+    /* Login form rules kept in this page so they apply even if style.css is cached */
+    .login-logo { width: 96px; height: 96px; border-radius: 50%; overflow: hidden; object-fit: cover; margin: 0 auto 14px; display: block; }
+    .login-form { display: grid; gap: 12px; margin-top: 20px; text-align: left; }
+    .login-form input { width: 100%; box-sizing: border-box; font: inherit; color: #eafbe7; background: #07100a; border: 1px solid #1d3a24; border-radius: 12px; padding: 12px 14px; outline: none; }
+    .login-form input::placeholder { color: #6f9a7d; }
+    .login-form input:focus { border-color: #2fbf4a; box-shadow: 0 0 0 3px #2fbf4a33; }
+    .login-btn { width: 100%; padding: 12px; border: 0; cursor: pointer; font: inherit; font-weight: 600; color: #06140d; background: linear-gradient(90deg, #7ee04a, #1a9e3a); border-radius: 999px; }
+    .login-btn:disabled { opacity: .6; cursor: wait; }
+  </style>
 </head>
 <body>
   <main class="login-wrap">
