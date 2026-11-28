@@ -816,3 +816,24 @@ td.actions {
   width: 100%;
   min-width: 0;
 }
+
+/* All text-like inputs and selects look the same, whatever their type attribute */
+input:not([type="file"]):not([type="checkbox"]),
+select {
+  font: inherit;
+  color: #eafbe7;
+  background: #07100a;
+  border: 1px solid #1d3a24;
+  border-radius: 10px;
+  padding: 9px 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+input:not([type="file"]):not([type="checkbox"])::placeholder {
+  color: #6f9a7d;
+}
+input:not([type="file"]):not([type="checkbox"]):focus,
+select:focus {
+  border-color: #2fbf4a;
+  box-shadow: 0 0 0 3px #2fbf4a33;
+}
