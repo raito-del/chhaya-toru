@@ -219,7 +219,7 @@ $("species-form").addEventListener("submit", (e) => {
 async function importSeed(file) {
   const data = JSON.parse(await file.text());
   let n = 0;
-  for (const coll of ["districts", "species"]) {
+  for (const coll of ["districts", "species", "yearly"]) {
     for (const item of data[coll] || []) {
       const { id, ...rest } = item;
       await setDoc(doc(db, coll, id), rest, { merge: true });
@@ -246,7 +246,7 @@ $("import-btn").addEventListener("click", async () => {
 async function removeSample() {
   if (!confirm("Remove all sample records? Real records are not affected.")) return 0;
   let n = 0;
-  for (const coll of ["districts", "species"]) {
+  for (const coll of ["districts", "species", "yearly"]) {
     const snap = await getDocs(query(collection(db, coll), where("sample", "==", true)));
     for (const d of snap.docs) {
       await deleteDoc(d.ref);

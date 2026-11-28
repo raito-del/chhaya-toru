@@ -1847,5 +1847,63 @@
       "co2PerTree": 25,
       "sample": true
     }
+  ],
+  "yearly": [
+    {
+      "id": "2019",
+      "year": 2019,
+      "planted": 8428,
+      "surviving": 6526,
+      "sample": true
+    },
+    {
+      "id": "2020",
+      "year": 2020,
+      "planted": 16856,
+      "surviving": 13052,
+      "sample": true
+    },
+    {
+      "id": "2021",
+      "year": 2021,
+      "planted": 30341,
+      "surviving": 23494,
+      "sample": true
+    },
+    {
+      "id": "2022",
+      "year": 2022,
+      "planted": 50568,
+      "surviving": 39157,
+      "sample": true
+    },
+    {
+      "id": "2023",
+      "year": 2023,
+      "planted": 75852,
+      "surviving": 58736,
+      "sample": true
+    },
+    {
+      "id": "2024",
+      "year": 2024,
+      "planted": 104508,
+      "surviving": 80925,
+      "sample": true
+    },
+    {
+      "id": "2025",
+      "year": 2025,
+      "planted": 138220,
+      "surviving": 107030,
+      "sample": true
+    },
+    {
+      "id": "2026",
+      "year": 2026,
+      "planted": 168561,
+      "surviving": 130524,
+      "sample": true
+    }
   ]
 }
