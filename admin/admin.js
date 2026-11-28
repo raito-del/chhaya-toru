@@ -1,15 +1,15 @@
 // Admin panel: sign-in gate, then edit the districts and species collections.
 // Firestore Security Rules are what actually stop non-admins from writing.
 
-import { loginWithGoogle, logout, isAdmin, watchAuth, db } from "../js/auth.js";
+import { loginWithPassword, logout, isAdmin, watchAuth, db } from "../js/auth.js";
 import {
-  collection, getDocs, addDoc, updateDoc, deleteDoc, doc
+  collection, getDocs, addDoc, updateDoc, deleteDoc, doc, setDoc, query, where
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const $ = (id) => document.getElementById(id);
 const loginView = $("login-view");
 const adminView = $("admin-view");
-const googleBtn = $("googleBtn");
+const loginForm = $("loginForm");
 const err = $("err");
 const status = $("status");
 
@@ -158,20 +158,22 @@ async function addRecord(coll, form) {
 }
 
 // ---------- Wiring ----------
-googleBtn.addEventListener("click", async () => {
-  googleBtn.disabled = true;
+loginForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = $("loginBtn");
+  btn.disabled = true;
   err.textContent = "";
   try {
-    const user = await loginWithGoogle();
+    const user = await loginWithPassword($("email").value.trim(), $("password").value);
     if (!(await isAdmin(user))) {
       await logout();
-      showLogin("This Google account is not approved as an admin.");
+      showLogin("This account is not approved as an admin.");
     }
-  } catch (e) {
-    showLogin("Sign-in did not complete. Please try again.");
-    console.error(e);
+  } catch (e2) {
+    console.error(e2);
+    showLogin("Wrong email or password.");
   } finally {
-    googleBtn.disabled = false;
+    btn.disabled = false;
   }
 });
 
@@ -197,6 +199,58 @@ $("district-form").addEventListener("submit", (e) => {
 $("species-form").addEventListener("submit", (e) => {
   e.preventDefault();
   addRecord("species", e.target).catch((er) => { console.error(er); say("Could not add. Check rights.", false); });
+});
+
+// Load seed.json and write every district and species (merge keeps existing counts)
+async function importSeed(file) {
+  const data = JSON.parse(await file.text());
+  let n = 0;
+  for (const coll of ["districts", "species"]) {
+    for (const item of data[coll] || []) {
+      const { id, ...rest } = item;
+      await setDoc(doc(db, coll, id), rest, { merge: true });
+      n++;
+    }
+  }
+  return n;
+}
+
+$("import-btn").addEventListener("click", async () => {
+  const f = $("import-file").files[0];
+  if (!f) return say("Choose the seed.json file first.", false);
+  try {
+    const n = await importSeed(f);
+    say(`Imported ${n} records.`);
+    await loadAll();
+  } catch (e) {
+    console.error(e);
+    say("Import failed. Check the file and your admin rights.", false);
+  }
+});
+
+// Delete every record marked sample: true, in both collections
+async function removeSample() {
+  if (!confirm("Remove all sample records? Real records are not affected.")) return 0;
+  let n = 0;
+  for (const coll of ["districts", "species"]) {
+    const snap = await getDocs(query(collection(db, coll), where("sample", "==", true)));
+    for (const d of snap.docs) {
+      await deleteDoc(d.ref);
+      n++;
+    }
+  }
+  return n;
+}
+
+$("remove-sample-btn").addEventListener("click", async () => {
+  try {
+    const n = await removeSample();
+    say(`Removed ${n} sample records.`);
+    await loadAll();
+  } catch (e) {
+    console.error(e);
+    say("Could not remove sample data. Check your admin rights.", false);
+  }
 });
 
 watchAuth(async (user) => {

@@ -187,6 +187,7 @@ async function init() {
       loadCollection("yearly")
     ]);
 
+    $("sample-note").hidden = !districts.some((d) => d.sample);
     const totals = totalsOf(districts);
     renderStats(totals);
     renderGauge(pct(totals.surviving, totals.planted));

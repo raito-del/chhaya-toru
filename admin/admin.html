@@ -19,10 +19,12 @@
     <section id="login-view" class="login-card fade-up">
       <img src="../assets/logo.png" class="login-logo sway" alt="Chhaya Toru logo">
       <h2>Admin sign in</h2>
-      <p class="muted">Sign in with your approved Google account to manage Chhaya Toru.</p>
-      <button id="googleBtn" class="google-btn" type="button">
-        <span class="g-badge">G</span> Continue with Google
-      </button>
+      <p class="muted">Enter your admin email and password.</p>
+      <form id="loginForm" class="login-form" autocomplete="on">
+        <input id="email" type="email" placeholder="Email" required autocomplete="username">
+        <input id="password" type="password" placeholder="Password" required autocomplete="current-password">
+        <button id="loginBtn" class="btn pri login-btn" type="submit">Log in</button>
+      </form>
       <p id="err" class="error" role="alert"></p>
     </section>
 
@@ -108,11 +110,22 @@
         </form>
       </section>
 
+      <section class="card wide">
+        <h2 class="card-title">Import data</h2>
+        <p class="muted">Load <code>data/seed.json</code> to add all 64 districts and 114 species. Existing planted and surviving numbers are kept.</p>
+        <div class="add-form">
+          <input type="file" id="import-file" accept=".json,application/json">
+          <button class="btn pri" id="import-btn" type="button">Import</button>
+          <button class="btn del" id="remove-sample-btn" type="button">Remove sample data</button>
+        </div>
+      </section>
+
       <p id="status" class="status" role="status"></p>
     </section>
 
   </main>
 
   <script type="module" src="admin.js"></script>
+  <script src="../js/background.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,1138 @@
+{
+  "districts": [
+    {
+      "id": "dhaka-dhaka",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Dhaka",
+      "name_bn": "ঢাকা"
+    },
+    {
+      "id": "dhaka-gazipur",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Gazipur",
+      "name_bn": "গাজীপুর"
+    },
+    {
+      "id": "dhaka-narayanganj",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Narayanganj",
+      "name_bn": "নারায়ণগঞ্জ"
+    },
+    {
+      "id": "dhaka-narsingdi",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Narsingdi",
+      "name_bn": "নরসিংদী"
+    },
+    {
+      "id": "dhaka-munshiganj",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Munshiganj",
+      "name_bn": "মুন্সিগঞ্জ"
+    },
+    {
+      "id": "dhaka-manikganj",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Manikganj",
+      "name_bn": "মানিকগঞ্জ"
+    },
+    {
+      "id": "dhaka-tangail",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Tangail",
+      "name_bn": "টাঙ্গাইল"
+    },
+    {
+      "id": "dhaka-kishoreganj",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Kishoreganj",
+      "name_bn": "কিশোরগঞ্জ"
+    },
+    {
+      "id": "dhaka-faridpur",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Faridpur",
+      "name_bn": "ফরিদপুর"
+    },
+    {
+      "id": "dhaka-gopalganj",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Gopalganj",
+      "name_bn": "গোপালগঞ্জ"
+    },
+    {
+      "id": "dhaka-madaripur",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Madaripur",
+      "name_bn": "মাদারীপুর"
+    },
+    {
+      "id": "dhaka-rajbari",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Rajbari",
+      "name_bn": "রাজবাড়ী"
+    },
+    {
+      "id": "dhaka-shariatpur",
+      "division_en": "Dhaka",
+      "division_bn": "ঢাকা",
+      "name_en": "Shariatpur",
+      "name_bn": "শরীয়তপুর"
+    },
+    {
+      "id": "chattogram-chattogram",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Chattogram",
+      "name_bn": "চট্টগ্রাম"
+    },
+    {
+      "id": "chattogram-cox-s-bazar",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Cox's Bazar",
+      "name_bn": "কক্সবাজার"
+    },
+    {
+      "id": "chattogram-cumilla",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Cumilla",
+      "name_bn": "কুমিল্লা"
+    },
+    {
+      "id": "chattogram-feni",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Feni",
+      "name_bn": "ফেনী"
+    },
+    {
+      "id": "chattogram-brahmanbaria",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Brahmanbaria",
+      "name_bn": "ব্রাহ্মণবাড়িয়া"
+    },
+    {
+      "id": "chattogram-noakhali",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Noakhali",
+      "name_bn": "নোয়াখালী"
+    },
+    {
+      "id": "chattogram-lakshmipur",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Lakshmipur",
+      "name_bn": "লক্ষ্মীপুর"
+    },
+    {
+      "id": "chattogram-chandpur",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Chandpur",
+      "name_bn": "চাঁদপুর"
+    },
+    {
+      "id": "chattogram-rangamati",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Rangamati",
+      "name_bn": "রাঙামাটি"
+    },
+    {
+      "id": "chattogram-khagrachhari",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Khagrachhari",
+      "name_bn": "খাগড়াছড়ি"
+    },
+    {
+      "id": "chattogram-bandarban",
+      "division_en": "Chattogram",
+      "division_bn": "চট্টগ্রাম",
+      "name_en": "Bandarban",
+      "name_bn": "বান্দরবান"
+    },
+    {
+      "id": "rajshahi-rajshahi",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Rajshahi",
+      "name_bn": "রাজশাহী"
+    },
+    {
+      "id": "rajshahi-chapainawabganj",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Chapainawabganj",
+      "name_bn": "চাঁপাইনবাবগঞ্জ"
+    },
+    {
+      "id": "rajshahi-naogaon",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Naogaon",
+      "name_bn": "নওগাঁ"
+    },
+    {
+      "id": "rajshahi-natore",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Natore",
+      "name_bn": "নাটোর"
+    },
+    {
+      "id": "rajshahi-pabna",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Pabna",
+      "name_bn": "পাবনা"
+    },
+    {
+      "id": "rajshahi-sirajganj",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Sirajganj",
+      "name_bn": "সিরাজগঞ্জ"
+    },
+    {
+      "id": "rajshahi-bogura",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Bogura",
+      "name_bn": "বগুড়া"
+    },
+    {
+      "id": "rajshahi-joypurhat",
+      "division_en": "Rajshahi",
+      "division_bn": "রাজশাহী",
+      "name_en": "Joypurhat",
+      "name_bn": "জয়পুরহাট"
+    },
+    {
+      "id": "khulna-khulna",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Khulna",
+      "name_bn": "খুলনা"
+    },
+    {
+      "id": "khulna-bagerhat",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Bagerhat",
+      "name_bn": "বাগেরহাট"
+    },
+    {
+      "id": "khulna-satkhira",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Satkhira",
+      "name_bn": "সাতক্ষীরা"
+    },
+    {
+      "id": "khulna-jashore",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Jashore",
+      "name_bn": "যশোর"
+    },
+    {
+      "id": "khulna-narail",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Narail",
+      "name_bn": "নড়াইল"
+    },
+    {
+      "id": "khulna-magura",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Magura",
+      "name_bn": "মাগুরা"
+    },
+    {
+      "id": "khulna-jhenaidah",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Jhenaidah",
+      "name_bn": "ঝিনাইদহ"
+    },
+    {
+      "id": "khulna-kushtia",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Kushtia",
+      "name_bn": "কুষ্টিয়া"
+    },
+    {
+      "id": "khulna-chuadanga",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Chuadanga",
+      "name_bn": "চুয়াডাঙ্গা"
+    },
+    {
+      "id": "khulna-meherpur",
+      "division_en": "Khulna",
+      "division_bn": "খুলনা",
+      "name_en": "Meherpur",
+      "name_bn": "মেহেরপুর"
+    },
+    {
+      "id": "barishal-barishal",
+      "division_en": "Barishal",
+      "division_bn": "বরিশাল",
+      "name_en": "Barishal",
+      "name_bn": "বরিশাল"
+    },
+    {
+      "id": "barishal-bhola",
+      "division_en": "Barishal",
+      "division_bn": "বরিশাল",
+      "name_en": "Bhola",
+      "name_bn": "ভোলা"
+    },
+    {
+      "id": "barishal-patuakhali",
+      "division_en": "Barishal",
+      "division_bn": "বরিশাল",
+      "name_en": "Patuakhali",
+      "name_bn": "পটুয়াখালী"
+    },
+    {
+      "id": "barishal-pirojpur",
+      "division_en": "Barishal",
+      "division_bn": "বরিশাল",
+      "name_en": "Pirojpur",
+      "name_bn": "পিরোজপুর"
+    },
+    {
+      "id": "barishal-jhalokathi",
+      "division_en": "Barishal",
+      "division_bn": "বরিশাল",
+      "name_en": "Jhalokathi",
+      "name_bn": "ঝালকাঠি"
+    },
+    {
+      "id": "barishal-barguna",
+      "division_en": "Barishal",
+      "division_bn": "বরিশাল",
+      "name_en": "Barguna",
+      "name_bn": "বরগুনা"
+    },
+    {
+      "id": "sylhet-sylhet",
+      "division_en": "Sylhet",
+      "division_bn": "সিলেট",
+      "name_en": "Sylhet",
+      "name_bn": "সিলেট"
+    },
+    {
+      "id": "sylhet-moulvibazar",
+      "division_en": "Sylhet",
+      "division_bn": "সিলেট",
+      "name_en": "Moulvibazar",
+      "name_bn": "মৌলভীবাজার"
+    },
+    {
+      "id": "sylhet-habiganj",
+      "division_en": "Sylhet",
+      "division_bn": "সিলেট",
+      "name_en": "Habiganj",
+      "name_bn": "হবিগঞ্জ"
+    },
+    {
+      "id": "sylhet-sunamganj",
+      "division_en": "Sylhet",
+      "division_bn": "সিলেট",
+      "name_en": "Sunamganj",
+      "name_bn": "সুনামগঞ্জ"
+    },
+    {
+      "id": "rangpur-rangpur",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Rangpur",
+      "name_bn": "রংপুর"
+    },
+    {
+      "id": "rangpur-dinajpur",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Dinajpur",
+      "name_bn": "দিনাজপুর"
+    },
+    {
+      "id": "rangpur-thakurgaon",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Thakurgaon",
+      "name_bn": "ঠাকুরগাঁও"
+    },
+    {
+      "id": "rangpur-panchagarh",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Panchagarh",
+      "name_bn": "পঞ্চগড়"
+    },
+    {
+      "id": "rangpur-nilphamari",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Nilphamari",
+      "name_bn": "নীলফামারী"
+    },
+    {
+      "id": "rangpur-lalmonirhat",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Lalmonirhat",
+      "name_bn": "লালমনিরহাট"
+    },
+    {
+      "id": "rangpur-kurigram",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Kurigram",
+      "name_bn": "কুড়িগ্রাম"
+    },
+    {
+      "id": "rangpur-gaibandha",
+      "division_en": "Rangpur",
+      "division_bn": "রংপুর",
+      "name_en": "Gaibandha",
+      "name_bn": "গাইবান্ধা"
+    },
+    {
+      "id": "mymensingh-mymensingh",
+      "division_en": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name_en": "Mymensingh",
+      "name_bn": "ময়মনসিংহ"
+    },
+    {
+      "id": "mymensingh-jamalpur",
+      "division_en": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name_en": "Jamalpur",
+      "name_bn": "জামালপুর"
+    },
+    {
+      "id": "mymensingh-netrokona",
+      "division_en": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name_en": "Netrokona",
+      "name_bn": "নেত্রকোণা"
+    },
+    {
+      "id": "mymensingh-sherpur",
+      "division_en": "Mymensingh",
+      "division_bn": "ময়মনসিংহ",
+      "name_en": "Sherpur",
+      "name_bn": "শেরপুর"
+    }
+  ],
+  "species": [
+    {
+      "id": "001-mango",
+      "name": "Mango",
+      "name_bn": "আম",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "002-jackfruit",
+      "name": "Jackfruit",
+      "name_bn": "কাঁঠাল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "003-litchi",
+      "name": "Litchi",
+      "name_bn": "লিচু",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "004-guava",
+      "name": "Guava",
+      "name_bn": "পেয়ারা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "005-black-plum-java-plum",
+      "name": "Black Plum / Java Plum",
+      "name_bn": "জাম",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "006-indian-jujube",
+      "name": "Indian Jujube",
+      "name_bn": "বরই / কুল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "007-wood-apple",
+      "name": "Wood Apple",
+      "name_bn": "কদবেল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "008-bael",
+      "name": "Bael",
+      "name_bn": "বেল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "009-tamarind",
+      "name": "Tamarind",
+      "name_bn": "তেঁতুল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "010-star-fruit",
+      "name": "Star Fruit",
+      "name_bn": "কামরাঙ্গা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "011-bilimbi",
+      "name": "Bilimbi",
+      "name_bn": "বিলিম্বি",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "012-indian-gooseberry",
+      "name": "Indian Gooseberry",
+      "name_bn": "আমলকী",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "013-beleric-myrobalan",
+      "name": "Beleric Myrobalan",
+      "name_bn": "বহেড়া",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "014-chebulic-myrobalan",
+      "name": "Chebulic Myrobalan",
+      "name_bn": "হরীতকী",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "015-papaya",
+      "name": "Papaya",
+      "name_bn": "পেঁপে",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "016-pomegranate",
+      "name": "Pomegranate",
+      "name_bn": "ডালিম",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "017-sapodilla",
+      "name": "Sapodilla",
+      "name_bn": "সফেদা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "018-custard-apple",
+      "name": "Custard Apple",
+      "name_bn": "আতা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "019-burmese-grape",
+      "name": "Burmese Grape",
+      "name_bn": "লটকন",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "020-monkey-jack",
+      "name": "Monkey Jack",
+      "name_bn": "ডেউয়া",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "021-elephant-apple",
+      "name": "Elephant Apple",
+      "name_bn": "চালতা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "022-hog-plum",
+      "name": "Hog Plum",
+      "name_bn": "আমড়া",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "023-indian-olive",
+      "name": "Indian Olive",
+      "name_bn": "জলপাই",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "024-pomelo",
+      "name": "Pomelo",
+      "name_bn": "জাম্বুরা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "025-lemon",
+      "name": "Lemon",
+      "name_bn": "লেবু",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "026-sweet-orange",
+      "name": "Sweet Orange",
+      "name_bn": "কমলা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "027-cashew-nut",
+      "name": "Cashew Nut",
+      "name_bn": "কাজুবাদাম",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "028-cluster-fig",
+      "name": "Cluster Fig",
+      "name_bn": "ডুমুর",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "029-mulberry",
+      "name": "Mulberry",
+      "name_bn": "তুঁত",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "030-avocado",
+      "name": "Avocado",
+      "name_bn": "অ্যাভোকাডো",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "031-water-apple",
+      "name": "Water Apple",
+      "name_bn": "জামরুল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "032-rose-apple",
+      "name": "Rose Apple",
+      "name_bn": "গোলাপজাম",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "033-rambutan",
+      "name": "Rambutan",
+      "name_bn": "রামবুটান",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "034-longan",
+      "name": "Longan",
+      "name_bn": "লংগান",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "035-phalsa",
+      "name": "Phalsa",
+      "name_bn": "ফলসা",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "036-gab-persimmon-relative",
+      "name": "Gab (Persimmon relative)",
+      "name_bn": "গাব",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "037-coconut",
+      "name": "Coconut",
+      "name_bn": "নারকেল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "038-betel-nut-areca-palm",
+      "name": "Betel Nut / Areca Palm",
+      "name_bn": "সুপারি",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "039-palmyra-palm",
+      "name": "Palmyra Palm",
+      "name_bn": "তাল",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "040-date-palm",
+      "name": "Date Palm",
+      "name_bn": "খেজুর",
+      "type": "Fruit Trees"
+    },
+    {
+      "id": "041-teak",
+      "name": "Teak",
+      "name_bn": "সেগুন",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "042-sal",
+      "name": "Sal",
+      "name_bn": "শাল",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "043-garjan",
+      "name": "Garjan",
+      "name_bn": "গর্জন",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "044-mahogany",
+      "name": "Mahogany",
+      "name_bn": "মেহগনি",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "045-rain-tree",
+      "name": "Rain Tree",
+      "name_bn": "রেইন ট্রি",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "046-indian-rosewood-sissoo",
+      "name": "Indian Rosewood (Sissoo)",
+      "name_bn": "শিশু",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "047-white-siris",
+      "name": "White Siris",
+      "name_bn": "সাদা কড়ই",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "048-siris-woman-s-tongue-tree",
+      "name": "Siris (Woman's Tongue Tree)",
+      "name_bn": "শিরীষ",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "049-acacia",
+      "name": "Acacia",
+      "name_bn": "আকাশমণি",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "050-eucalyptus",
+      "name": "Eucalyptus",
+      "name_bn": "ইউক্যালিপটাস",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "051-gamar",
+      "name": "Gamar",
+      "name_bn": "গামার",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "052-chapalish",
+      "name": "Chapalish",
+      "name_bn": "চাপালিশ",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "053-telsur",
+      "name": "Telsur",
+      "name_bn": "তেলসুর",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "054-civit",
+      "name": "Civit",
+      "name_bn": "সিভিট",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "055-jarul",
+      "name": "Jarul",
+      "name_bn": "জারুল",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "056-kadam-burflower-tree",
+      "name": "Kadam (Burflower Tree)",
+      "name_bn": "কদম",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "057-neem",
+      "name": "Neem",
+      "name_bn": "নিম",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "058-toon",
+      "name": "Toon",
+      "name_bn": "তুন",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "059-chickrassy",
+      "name": "Chickrassy",
+      "name_bn": "চিকরাশি",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "060-dhaki-jam",
+      "name": "Dhaki Jam",
+      "name_bn": "ধাকিজাম",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "061-lohakath-ironwood",
+      "name": "Lohakath (Ironwood)",
+      "name_bn": "লোহাকাঠ",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "062-ipil-ipil",
+      "name": "Ipil-Ipil",
+      "name_bn": "ইপিল ইপিল",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "063-casuarina-whistling-pine",
+      "name": "Casuarina (Whistling Pine)",
+      "name_bn": "ঝাউ",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "064-babla-gum-arabic-tree",
+      "name": "Babla (Gum Arabic Tree)",
+      "name_bn": "বাবলা",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "065-khair-catechu",
+      "name": "Khair (Catechu)",
+      "name_bn": "খয়ের",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "066-rubber",
+      "name": "Rubber",
+      "name_bn": "রাবার",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "067-tamal",
+      "name": "Tamal",
+      "name_bn": "তমাল",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "068-bandarhola",
+      "name": "Bandarhola",
+      "name_bn": "বান্দরহোলা",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "069-sheora",
+      "name": "Sheora",
+      "name_bn": "শেওড়া",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "070-arjun",
+      "name": "Arjun",
+      "name_bn": "অর্জুন",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "071-hijal",
+      "name": "Hijal",
+      "name_bn": "হিজল",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "072-moringa-drumstick-tree",
+      "name": "Moringa (Drumstick Tree)",
+      "name_bn": "সজনে",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "073-bamboo",
+      "name": "Bamboo",
+      "name_bn": "বাঁশ",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "074-cane-rattan",
+      "name": "Cane (Rattan)",
+      "name_bn": "বেত",
+      "type": "Timber and Forest Trees"
+    },
+    {
+      "id": "075-sundri",
+      "name": "Sundri",
+      "name_bn": "সুন্দরী",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "076-gewa-blinding-tree",
+      "name": "Gewa (Blinding Tree)",
+      "name_bn": "গেওয়া",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "077-goran",
+      "name": "Goran",
+      "name_bn": "গরান",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "078-keora-mangrove-apple",
+      "name": "Keora (Mangrove Apple)",
+      "name_bn": "কেওড়া",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "079-baen-white-mangrove",
+      "name": "Baen (White Mangrove)",
+      "name_bn": "বাইন",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "080-passur-cedar-mangrove",
+      "name": "Passur (Cedar Mangrove)",
+      "name_bn": "পশুর",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "081-kankra-large-leafed-orange-mangrove",
+      "name": "Kankra (Large-leafed Orange Mangrove)",
+      "name_bn": "কাঁকড়া",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "082-dhundul-cannonball-mangrove",
+      "name": "Dhundul (Cannonball Mangrove)",
+      "name_bn": "ধুন্দল",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "083-amur",
+      "name": "Amur",
+      "name_bn": "আমুর",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "084-khalshi-river-mangrove",
+      "name": "Khalshi (River Mangrove)",
+      "name_bn": "খলিশা",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "085-singra",
+      "name": "Singra",
+      "name_bn": "সিংড়া",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "086-nipa-palm",
+      "name": "Nipa Palm",
+      "name_bn": "গোলপাতা",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "087-mangrove-date-palm",
+      "name": "Mangrove Date Palm",
+      "name_bn": "হেঁতাল",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "088-holly-mangrove",
+      "name": "Holly Mangrove",
+      "name_bn": "হারগোজা",
+      "type": "Mangrove Trees of the Sundarbans"
+    },
+    {
+      "id": "089-royal-poinciana-flamboyant",
+      "name": "Royal Poinciana (Flamboyant)",
+      "name_bn": "কৃষ্ণচূড়া",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "090-copper-pod-yellow-flamboyant",
+      "name": "Copper Pod (Yellow Flamboyant)",
+      "name_bn": "রাধাচূড়া",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "091-golden-shower",
+      "name": "Golden Shower",
+      "name_bn": "সোনালু",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "092-pink-cassia",
+      "name": "Pink Cassia",
+      "name_bn": "গোলাপি সোনালু",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "093-red-silk-cotton",
+      "name": "Red Silk-Cotton",
+      "name_bn": "শিমুল",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "094-flame-of-the-forest",
+      "name": "Flame of the Forest",
+      "name_bn": "পলাশ",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "095-coral-tree",
+      "name": "Coral Tree",
+      "name_bn": "মান্দার",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "096-ashoka",
+      "name": "Ashoka",
+      "name_bn": "অশোক",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "097-orchid-tree",
+      "name": "Orchid Tree",
+      "name_bn": "কাঞ্চন",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "098-spanish-cherry-bullet-wood",
+      "name": "Spanish Cherry (Bullet Wood)",
+      "name_bn": "বকুল",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "099-golden-champa",
+      "name": "Golden Champa",
+      "name_bn": "চাঁপা",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "100-frangipani",
+      "name": "Frangipani",
+      "name_bn": "কাঠগোলাপ",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "101-ceylon-ironwood",
+      "name": "Ceylon Ironwood",
+      "name_bn": "নাগেশ্বর",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "102-cannonball-tree",
+      "name": "Cannonball Tree",
+      "name_bn": "নাগলিঙ্গম",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "103-indian-cork-tree",
+      "name": "Indian Cork Tree",
+      "name_bn": "আকাশনিম",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "104-devil-s-tree-blackboard-tree",
+      "name": "Devil's Tree (Blackboard Tree)",
+      "name_bn": "ছাতিম",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "105-mast-tree",
+      "name": "Mast Tree",
+      "name_bn": "দেবদারু",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "106-jacaranda",
+      "name": "Jacaranda",
+      "name_bn": "জ্যাকারান্ডা",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "107-tabebuia",
+      "name": "Tabebuia",
+      "name_bn": "টাবেবুইয়া",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "108-bottlebrush",
+      "name": "Bottlebrush",
+      "name_bn": "বটলব্রাশ",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "109-royal-palm",
+      "name": "Royal Palm",
+      "name_bn": "রয়্যাল পাম",
+      "type": "Flowering and Ornamental Trees"
+    },
+    {
+      "id": "110-banyan",
+      "name": "Banyan",
+      "name_bn": "বট",
+      "type": "Banyan and Fig Family"
+    },
+    {
+      "id": "111-sacred-fig-peepal",
+      "name": "Sacred Fig (Peepal)",
+      "name_bn": "অশ্বত্থ",
+      "type": "Banyan and Fig Family"
+    },
+    {
+      "id": "112-java-fig-pakur",
+      "name": "Java Fig (Pakur)",
+      "name_bn": "পাকুড়",
+      "type": "Banyan and Fig Family"
+    },
+    {
+      "id": "113-weeping-fig",
+      "name": "Weeping Fig",
+      "name_bn": "ঝুরি বট",
+      "type": "Banyan and Fig Family"
+    },
+    {
+      "id": "114-rubber-fig",
+      "name": "Rubber Fig",
+      "name_bn": "রাবার বট",
+      "type": "Banyan and Fig Family"
+    }
+  ]
+}
