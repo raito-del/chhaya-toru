@@ -768,3 +768,51 @@ td.actions {
     flex: 1 1 100%;
   }
 }
+
+/* ==========================================================================
+   Admin password login
+   ========================================================================== */
+
+.login-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  font: inherit;
+  color: var(--ink);
+  background: #07100a;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: var(--green-2);
+  box-shadow: 0 0 0 3px #2fbf4a33;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 4px;
+}
+
+/* Logo: show as a clean circle so the image's white corners are clipped */
+.login-logo,
+.brand-logo {
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Make sure the sign-in inputs fill the card on every browser */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  min-width: 0;
+}

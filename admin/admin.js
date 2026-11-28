@@ -34,6 +34,20 @@ function readRow(tr) {
   return out;
 }
 
+// Turns a Firebase Auth error code into a message the admin can act on
+function loginErrorText(code) {
+  const map = {
+    "auth/invalid-email": "The email address is not valid.",
+    "auth/user-not-found": "No user with this email. Add it in Firebase → Authentication → Users.",
+    "auth/wrong-password": "Wrong password.",
+    "auth/invalid-credential": "Email or password is wrong. Check both, or reset the password in Firebase.",
+    "auth/operation-not-allowed": "Email/Password sign-in is turned off. Enable it in Firebase → Authentication → Sign-in method.",
+    "auth/too-many-requests": "Too many attempts. Wait a few minutes and try again.",
+    "auth/network-request-failed": "Network error. Check your internet connection."
+  };
+  return map[code] || `Sign-in failed (${code || "unknown error"}).`;
+}
+
 // ---------- Views ----------
 function showLogin(message = "") {
   err.textContent = message;
@@ -170,8 +184,8 @@ loginForm.addEventListener("submit", async (e) => {
       showLogin("This account is not approved as an admin.");
     }
   } catch (e2) {
-    console.error(e2);
-    showLogin("Wrong email or password.");
+    console.error(e2.code, e2.message);
+    showLogin(loginErrorText(e2.code));
   } finally {
     btn.disabled = false;
   }
