@@ -41,6 +41,9 @@
       border-color: #2fbf4a;
       box-shadow: 0 0 0 3px #2fbf4a33;
     }
+    .head-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .back-link { text-decoration: none; display: inline-block; font: inherit; font-size: 14px; color: #9cc7a6; background: transparent; border: 1px solid #1d3a24; border-radius: 999px; padding: 9px 16px; }
+    .back-link:hover { color: #06140d; background: linear-gradient(90deg, #7ee04a, #1a9e3a); border-color: transparent; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -66,7 +69,10 @@
           <h2>Chhaya Toru · Admin</h2>
           <p class="muted" id="who"></p>
         </div>
-        <button id="logoutBtn" class="ghost-btn" type="button">Log out</button>
+        <div class="head-actions">
+          <a href="../index.html" class="ghost-btn back-link">← Back to home</a>
+          <button id="logoutBtn" class="ghost-btn" type="button">Log out</button>
+        </div>
       </header>
 
       <nav class="admin-tabs" aria-label="Admin sections">
